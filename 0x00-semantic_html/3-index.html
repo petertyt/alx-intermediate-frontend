@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="A blog post about semantic HTML and accessibility practises"
+    />
+    <meta name="keywords" content="HTML, Semantic, Accessibility, Blog, SEO" />
+    <meta name="author" content="Peter Quayetey" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Blog</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <header>
+          <h2>Understanding Semantic HTML</h2>
+        </header>
+        <p>Published on <time datetime="2024-09-10">September 10</time></p>
+        <section>
+          <p>
+            Semantic HTML introduces meaning to the web page rather than just
+            presentation. It helps with SEO and accessibility by making it
+            easier for screen readers and search engines to understand the
+            content structure.
+          </p>
+        </section>
+      </article>
+
+      <section>
+        <form action="#" method="POST" aria-labelledby="form-title" role="form">
+          <h2 id="form-title">Contact Form</h2>
+
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              aria-required="true"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              aria-required="true"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              aria-required="true"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; copyright</p>
+    </footer>
+  </body>
+</html>
